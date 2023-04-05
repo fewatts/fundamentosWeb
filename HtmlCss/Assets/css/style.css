@@ -1,0 +1,78 @@
+/* reset básico do CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7890a8;
+}
+/* O . chama uma classe */
+/* Index */
+.navbar{
+    color: #cbe4ea;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+.banner{
+    background-color:#181848;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    shape-margin: 20%;
+}
+.ftperfil{
+    border-radius: 50%;
+    size: 15cm;
+}
+.wh{
+    width: 400px;
+    height: 400px;
+}
+.skills{
+    background-color: #f0a818;
+    align-items:end;
+    width: 80%;
+    margin: 0 auto;
+}
+.frame{
+    aspect-ratio: 16/9;
+    width: 800px;
+    margin: 2em auto; 
+    text-align: center;
+}
+/* contato */
+a{
+    text-decoration: none;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: #181848;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+label{
+    display: flex;
+    color: aliceblue;
+}
+textarea{
+    display: flex;
+    justify-content: center;
+ 
+}
+p{
+    text-align:justify;
+    color: beige;
+}
+.m{
+    text-align: center;
+    color: beige;
+}
