@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+          <li>
+            <a href="./index.html"> Home </a>
+          </li>
+          <li>
+            <a href="./contato.html"> Contato </a>
+          </li>
+        </ul>
+      </nav>
+    
+      <h1>Entre em contato comigo</h1>
+      <main class="mainFlex">
+        <div class="left">
+          <form class="form">
+            <label for="nome">Nome:</label> <br />
+            <input type="text" id="nome" onkeyup="lerNome()" />
+            <div id="txtNome"></div>
+            <br />
+            <br />
+            <label for="email">E-mail:</label> <br />
+            <input type="email" id="email" />
+            <br />
+            <br />
+            <label for="assunto">Assunto:</label> <br />
+            <textarea name="assunto" id="assunto" rows="5"></textarea>
+            <br />
+            <br />
+            <button>Enviar</button>
+          </form>
+        </div>
+  
+        <div class="right">
+          <div>
+            <p>Street Alice in wonderland, 777</p>
+            <p>Hello World</p>
+          </div>
+  
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d14631.26502065563!2d-46.31111703780519!3d-23.539110278588225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x94ce7a773444f2c3%3A0x8c415e7935c7ad35!2sTeatro%20Dr.%20Armando%20de%20R%C3%A9%2C%20R.%20Gen.%20Francisco%20Glic%C3%A9rio%20-%20Centro%2C%20Suzano%20-%20SP%2C%2008674-002!3m2!1d-23.545997699999997!2d-46.3131207!5e0!3m2!1spt-BR!2sbr!4v1680800854770!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </main>
+    <nav>
+        <ul class="navbar">
+            <li><a href="https://www.github.com/fewatts" target="_blank">github</a></li>
+            <li><a href="https://www.linkedin.com/in/fernando-alves-85091716b/" target="_blank">linkedin</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>Fernando Alves de paula&copy;</p>
+    </footer>
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

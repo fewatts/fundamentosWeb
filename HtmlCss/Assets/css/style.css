@@ -1,78 +1,212 @@
-/* reset básico do CSS */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* Reset Completo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Mudanças nas páginas */
+/* Paletas utilizadas */
+:root {
+    --background: #2E2017;
+    --marrom: #372015;
+    --bege: #9E7E6C;
+    --cinza: #989F95;
 }
 body{
-    background-color: #7890a8;
+    background-color: var(--background);
+    font-family: 'Times New Roman', Times, serif;
 }
-/* O . chama uma classe */
-/* Index */
-.navbar{
-    color: #cbe4ea;
-    font-size: 25px;
+nav ul{
     display: flex;
-    justify-content: center;
-    gap: 10px;
     list-style: none;
+    gap: 2rem;
+    font-size: 1.75rem;
+    color:var(--bege);
+    justify-content:center;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
 }
-.banner{
-    background-color:#181848;   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
+nav ul li a{
+    color: var(--bege);
+}
+nav ul li a:hover {
+    color:var(--cinza);
+    transition: color 0.3s;
+}
+ul li a:hover {
+    color:var(--bege);
+    transition: color 0.3s;
+}
+main {
+    width: 60%;
     margin: 0 auto;
-    shape-margin: 20%;
+}
+h1,
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--cinza);
+}
+.form{
+    color:var(--marrom)
+}
+.right{
+    color:var(--marrom)
+}
+.sobre{
+    color:var(--marrom);
+}
+.banner {
+    display: flex;
+    align-items: center;
+    background-color:var(--bege);
+    border-radius: 12px;
+    padding: 0.5rem;
 }
 .ftperfil{
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     size: 15cm;
+    width: max(250px, 25%);
+    object-fit: contain;
 }
-.wh{
-    width: 400px;
-    height: 400px;
+.textos {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 300;
 }
-.skills{
-    background-color: #f0a818;
-    align-items:end;
-    width: 80%;
-    margin: 0 auto;
-}
-.frame{
+.video {
     aspect-ratio: 16/9;
     width: 800px;
-    margin: 2em auto; 
+    margin: 2em auto;
+    text-align: center;
+    border-radius: 16px;
+}
+footer {
+    text-align: center;
+    border-top: 2px solid var(--dark-yellow);
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+.mainFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;
+    border-radius: 12px;
+    padding: 0.5rem;
+    background-color: var(--bege);
+}
+.left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+  .left form {
+    margin: 0 auto;
+    width: 30vw;
+    padding: 0 2rem;
+}
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-yellow);
+    background-color:wheat;
+    color: var(--black);
+}
+  
+  button:hover {
+    background-color:var(--cinza);
+    cursor: pointer;
+}
+  
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+  
+  .right p {
     text-align: center;
 }
-/* contato */
-a{
-    text-decoration: none;
+  
+  .right iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
 }
-h1{
-    display: flex;
-    justify-content: center;
-    color: #181848;
-}
-h2{
-    display: flex;
-    justify-content: center;
-}
-label{
-    display: flex;
-    color: aliceblue;
-}
-textarea{
-    display: flex;
-    justify-content: center;
- 
-}
-p{
-    text-align:justify;
-    color: beige;
-}
-.m{
-    text-align: center;
-    color: beige;
+  
+  @media (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    .banner {
+      flex-direction: column-reverse;
+    }
+    .mainFlex {
+      flex-direction: column;
+    }
+    .left form {
+      width: 100%;
+    }
+
 }
